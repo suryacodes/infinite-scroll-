@@ -30,7 +30,10 @@ export default function App() {
           fetchData();
         }
       },
-      { threshold: 1 } // element must be visible 100 percent
+      {
+        threshold: 1 /* element must be visible 100 percent */,
+        rootMargin: '100px ',
+      }
     );
 
     if (observerTarget.current) {
